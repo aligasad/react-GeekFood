@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  background-color: rgb(19, 19, 55);
+
+  .leftH{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+  
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  .midH {
+    ul{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: white;
+    
+      li{
+        list-style-type: none;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .rightH{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    button{
+      padding: 8px 15px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      background-color: blue;
+      cursor: pointer;
+      font-weight: bolder;
+      outline: none;
+    }
+
+    .bars{
+      display: none;
+      color: white;
+      font-size: 24px;
+    }
+  }
+}
+
+#hero{
+  .page1{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 62.25px);
+    background: url(http://architecturestyle.net/sites/default/files/stunning-restaurant-interior-design-View03.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .opacity{
+      width: 100%;
+      height: calc(100vh - 62.25px);
+      background-color: aliceblue;
+      opacity: 0.5;
+      position: absolute;
+
+    }
+
+    .content{
+      z-index: 99;
+      width: 50%;
+      margin: 2rem;
+      padding: 1rem;
+      display: grid;
+      gap: 30px;
+
+      h1{
+        font-size: 2.8rem;
+        line-height: 3rem;
+        span{
+          color: #DC143C;
+        }
+      }
+
+      .btn{
+        display: flex;
+        gap: 15px;
+        button{
+          padding: 7px 30px;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .btn1{
+          background-color: #DC143C;
+        }
+      }
+    }
+  }
+
+  .page2{
+    height: 120vh;
+    margin: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .left{
+      img{
+        width: 650px;
+        height: 550px;
+        position: absolute;
+        bottom: 8%;
+        z-index: 11;
+      }
+    }
+
+    .right{
+      width: 600px;
+      height: 650px;
+      background-color: rgba(207, 207, 207, 0.644);
+      position: relative;
+      .content{
+        width: 53%;
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        place-items: start;
+        gap: 15px;
+
+        h2{
+          font-weight: 600;
+        }
+        p{
+          color: rgb(72, 71, 71);
+        }
+        button{
+          padding: 10px 30px;
+          border: none;
+          border-radius: 5px;
+          color: white;
+          background-color: rgb(103, 13, 207);
+        }
+      }
+    }
+  }
+}
+
+#cardBox{
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+
+  .card{
+    width: 340px;
+    height: 300px;
+    .msg{
+      background-color: rgba(207, 207, 207, 0.644);
+      padding: 1rem;
+      border-radius: 20px;
+    }
+    .info{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+      }
+      .name{
+        font-size: 0.9rem;
+      }
+      .position{
+        color: rgb(43, 43, 43);
+      }
+    }
+  }
+}
+
+#footer{
+  height: 60vh;
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  
+  h2{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(8, 135, 99);
+
+    .ficon{
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+  }
+  p{
+    text-align: center;
+    /* width: 25%; */
+  }
+  ul{
+    display: flex;
+    gap: 35px;
+    li{
+      list-style-type: none;
+      font-weight: 100;
+      color: rgba(0, 0, 0, 0.874);
+    }
+  }
+
+  .icons{
+    display: flex;
+    gap: 40px;
+
+    a{
+      font-size: 1.5rem;
+      color: rgb(24, 24, 24);
+    }
+  }
+
+}
+
+/* -----------------------QUOTE-------------------------------- */
+
+.quotes{
+  padding: 20px 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+
+  .quote{
+    text-align: center;
+    padding: 30px 20px;
+    width: 100%;
+    color: white;
+    background-color: rgb(25, 25, 46);
+    border-radius: 10px;
+
+    p{
+      color: gray;
+    }
+  }
+}
+
+
+
+/* ---------------------MEDIAQUERY-------------------------- */
+
+@media screen and (max-width: 740px) {
+  #header{
+    .leftH{
+      gap: 10px;
+
+      img{
+        width: 22px;
+      }
+    
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    .midH ul{
+      gap: 12px;
+
+      li{
+        font-size: 0.7rem;
+      }
+    }
+
+    .rightH{
+      button{
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-weight: lighter;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  #hero{
+    .page1{
+      height: calc(100vh - 55.25px);
+      .opacity{
+        height: calc(100vh - 55.25px);
+      }
+      .content{
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #header{
+    .leftH{
+      gap: 10px;
+
+      img{
+        width: 22px;
+      }
+    
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    .midH{
+      ul{
+        display: none;
+      }
+    } 
+
+    .rightH{
+      button{
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-weight: lighter;
+        font-size: 0.7rem;
+      }
+
+      .bars{
+        display: block;
+      }
+    }
+  }
+
+  #hero{
+    .page1{
+      .content{
+        width: 90%;
+        text-align: center;
+
+        h1{
+          font-size: 2rem;
+        }
+
+        .btn{
+          margin: auto;
+          button{
+            padding: 6px 10px;
+          }
+        }
+      }
+    }
+  }
+}
