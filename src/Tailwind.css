@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+
+#CARD{
+
+  #upper, #lower{
+    padding: 1rem;
+  }
+}
+
+#CARD:hover{
+  transform: scale(1.02);
+  box-shadow: 8px 4px 5px #000;
+  transition: 0.5s;
+}
+
+#inputs{
+  margin: 1rem 3rem;
+  input{
+    padding: 5px 10px;
+  }
+
+  #ratingNum{
+    width: 50px;
+  }
+}
+
+#pageBtns{
+  padding: 3px 10px;
+}
+#pageBtns:hover{
+  background: rgb(255, 62, 62);
+  color: white;
+}

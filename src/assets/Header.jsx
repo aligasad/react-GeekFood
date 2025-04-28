@@ -1,5 +1,5 @@
 import { FaBars } from "react-icons/fa";
-
+import { Link } from 'react-router-dom';
 
 function Header() {
 
@@ -13,11 +13,19 @@ function Header() {
         </div>
         <div className="midH">
           <ul>
-            <li >Home</li>
-            <li >Quote</li>
-            <li>Resturants</li>
-            <li>Foods</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/quotes"> Quote</Link>
+            </li>
+            <li>
+              <Link to={"/resturents"}>Resturants</Link>
+            </li>
+            <li>
+              <Link>Foods</Link>
+            </li>
+            <li><Link>Contact</Link></li>
           </ul>
         </div>
         <div className="rightH">

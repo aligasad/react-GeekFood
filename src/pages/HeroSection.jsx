@@ -1,4 +1,6 @@
 import React from 'react'
+import './Styles.css';
+import CardSection from './CardSection'
 
 function HeroSection() {
   return (
@@ -28,6 +30,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
+      <CardSection />
     </>
   )
 }
